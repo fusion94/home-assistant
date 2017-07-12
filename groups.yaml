@@ -1,0 +1,24 @@
+Speedtest:
+- sensor.speedtest_ping
+- sensor.speedtest_download
+- sensor.speedtest_upload
+
+Worldclock:
+- sensor.los_angeles
+- sensor.new_york
+- sensor.utc
+- sensor.london
+- sensor.zurich
+#- sensor.kolkata
+
+- binary_sensor.living_room_nest_protect_online
+- sensor.living_room_nest_protect_battery_health
+- sensor.living_room_nest_protect_co_status
+- sensor.living_room_nest_protect_smoke_status
+
+Other:
+  name: Other
+  view: yes
+  entities:
+    - group.speedtest
+    - group.worldclock

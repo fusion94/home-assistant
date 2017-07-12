@@ -1,0 +1,39 @@
+### SENSORS ###
+
+- platform: speedtest
+  minute:
+    - 0
+    - 15
+    - 30
+    - 45
+  monitored_conditions:
+    - ping
+    - download
+    - upload
+
+##################################
+####     TIME/DATE            ####
+##################################
+
+- platform: worldclock
+  time_zone: America/Los_Angeles
+  name: 'Half Moon Bay'     
+- platform: worldclock
+  time_zone: America/New_York
+  name: 'New York'
+- platform: worldclock
+  time_zone: Etc/UTC
+  name: 'UTC'
+- platform: worldclock
+  time_zone: Europe/London
+  name: 'London'
+- platform: worldclock
+  time_zone: Europe/Zurich
+  name: 'Zurich'
+- platform: worldclock
+  time_zone: Asia/Kolkata
+  name: 'India'
+
+- platform: wemo
+  static:
+    - 10.0.0.175

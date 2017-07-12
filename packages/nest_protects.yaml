@@ -1,0 +1,35 @@
+# Nest Protect Package
+
+homeassistant:
+  customize:
+
+    group.nest_protect_home:
+      icon: mdi:nest-protect
+    group.nest_family_room:
+      icon: mdi:nest-protect
+
+group:
+  Nest Protect Home:
+    entities:
+      - group.nest_family_room
+      - group.nest_master_bedroom
+      - group.nest_bedroom
+  Nest Protect Family Room:
+    entities:
+      - binary_sensor.family_room_nest_protect_online
+      - sensor.family_room_nest_protect_battery_health
+      - sensor.family_room_nest_protect_co_status
+      - sensor.family_room_nest_protect_smoke_status
+  Nest Protect Master Bedroom:
+    entities:
+      - binary_sensor.master_bedroom_nest_protect_online
+      - sensor.master_bedroom_nest_protect_battery_health
+      - sensor.master_bedroom_nest_protect_co_status
+      - sensor.master_bedroom_nest_protect_smoke_status
+  Nest Protect Patrick's Bedroom:
+    entities:
+      - binary_sensor.bedroom_nest_protect_online
+      - sensor.bedroom_nest_protect_battery_health
+      - sensor.bedroom_nest_protect_co_status
+      - sensor.bedroom_nest_protect_smoke_status
+
