@@ -37,3 +37,9 @@
 - platform: wemo
   static:
     - 10.0.0.175
+
+
+- platform: apple_tv 
+  host: 10.0.0.4
+
+

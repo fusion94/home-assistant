@@ -22,3 +22,11 @@ Other:
   entities:
     - group.speedtest
     - group.worldclock
+
+weather:
+    name: Weather
+    entities:
+      - sensor.dark_sky_apparent_temperature
+      - sensor.dark_sky_summary
+
+
