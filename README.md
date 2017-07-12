@@ -6,6 +6,8 @@ Thanks to all the people in the [gitter](https://gitter.im/home-assistant/home-a
 
 And thanks to *all* the devs that create the Home Assistant magic
 
+![Home Assistant](https://github.com/fusion94/home-assistant/raw/master/ha-screenshot.png)
+
 ## Devices
 
 - Google Chromecast
