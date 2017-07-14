@@ -36,10 +36,18 @@
 
 - platform: wemo
   static:
-    - 10.0.0.175
-
+    - 10.0.0.131
+    - 10.0.0.176
 
 - platform: apple_tv 
   host: 10.0.0.4
 
+- platform: systemmonitor
+  resources:
+    - type: memory_free
+    - type: processor_use
+    - type: since_last_boot
+    - type: last_boot
+
+- platform: cpuspeed
 

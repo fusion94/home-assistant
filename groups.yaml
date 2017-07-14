@@ -4,12 +4,12 @@ Speedtest:
 - sensor.speedtest_upload
 
 Worldclock:
-- sensor.los_angeles
+- sensor.half_moon_bay
 - sensor.new_york
 - sensor.utc
 - sensor.london
 - sensor.zurich
-#- sensor.kolkata
+- sensor.india
 
 - binary_sensor.living_room_nest_protect_online
 - sensor.living_room_nest_protect_battery_health
@@ -22,11 +22,11 @@ Other:
   entities:
     - group.speedtest
     - group.worldclock
+    - group.system_monitor
 
-weather:
-    name: Weather
-    entities:
-      - sensor.dark_sky_apparent_temperature
-      - sensor.dark_sky_summary
-
+System Monitor:
+    - sensor.memory_free
+    - sensor.processor_use
+    - sensor.since_last_boot
+    - sensor.last_boot
 

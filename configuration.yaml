@@ -64,4 +64,11 @@ nest:
   client_id: !secret nest_client_id
   client_secret: !secret nest_client_secret
 
+panel_iframe:
+  configurator:
+    title: Configurator
+    icon: mdi:wrench
+    url: http://10.0.0.13:3218
+
+
 
