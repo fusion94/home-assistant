@@ -13,6 +13,7 @@ homeassistant:
   time_zone: America/Los_Angeles
   packages: !include_dir_named packages
 # Show links to resources in log and frontend
+
 #introduction:
 
 # Enables the frontend
@@ -69,6 +70,21 @@ panel_iframe:
     title: Configurator
     icon: mdi:wrench
     url: http://10.0.0.13:3218
+
+
+switch:
+  - platform: mqtt
+    name: "Bedroom Switch"
+    state_topic: "home/bedroom/switch1"
+    command_topic: "home/bedroom/switch1/set"
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+    qos: 0
+    retain: true
+
+
+
 
 
 

@@ -1,5 +1,9 @@
 ### SENSORS ###
 
+- platform: steam_online
+  api_key: !secret steam_client_id
+  accounts: 76561198024913711
+
 - platform: speedtest
   minute:
     - 0
@@ -45,9 +49,34 @@
 - platform: systemmonitor
   resources:
     - type: memory_free
+    - type: memory_use
+    - type: memory_use_percent
+    - type: load_1m
+    - type: load_5m
+    - type: load_15m
     - type: processor_use
     - type: since_last_boot
     - type: last_boot
 
 - platform: cpuspeed
+
+
+- platform: darksky
+  api_key: !secret darksky_client_id
+  monitored_conditions:
+   - summary
+   - temperature
+   - apparent_temperature
+   - wind_speed
+   - humidity
+   - visibility
+   - nearest_storm_distance
+
+
+
+
+
+
+
+
 
