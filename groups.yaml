@@ -1,3 +1,9 @@
+Device Tracker:
+#- sensor.device_tracker.pixelxl
+- sensor.pixelxl_battery
+- sensor.pixelxl_latitude
+- sensor.pixelxl_lon
+
 Speed Test:
 - sensor.speedtest_ping
 - sensor.speedtest_download
@@ -11,19 +17,47 @@ World Clock:
 - sensor.zurich
 - sensor.india
 
-- binary_sensor.living_room_nest_protect_online
-- sensor.living_room_nest_protect_battery_health
-- sensor.living_room_nest_protect_co_status
-- sensor.living_room_nest_protect_smoke_status
+Master Bedroom Nest:  
+- binary_sensor.master_bedroom_nest_protect_online
+- sensor.master_bedroom_nest_protect_battery_health
+- sensor.master_bedroom_nest_protect_co_status
+- sensor.master_bedroom_nest_protect_smoke_status
 
-Other:
-  name: Other
+Family Room Nest:
+- binary_sensor.family_room_nest_protect_online
+- sensor.family_room_nest_protect_battery_health
+- sensor.family_room_nest_protect_co_status
+- sensor.family_room_nest_protect_smoke_status
+
+Family Room:
+  name: Family Room
   view: yes
   entities:
-    - group.speedtest
-    - group.worldclock
+    - group.family_room_nest        
+
+Living Room:
+  name: Living Room
+  view: yes
+  entities:
+    - group.living_room_nest
+
+Master Bedroom:
+  name: Master Bedroom
+  view: yes
+  entities:
+    - group.master_bedroom_nest      
+
+Other:
+  name: Computers
+  view: yes
+  entities:
+    - group.speed_test
     - group.system_monitor
 
+CryptoCurrency:
+ - sensor.blockchain_exchange_rate        
+ - sensor.blockchain_trade_volume_btc
+ - sensor.coinmarketcap_currency_btc
 
 System Monitor:
     - sensor.cpu_speed
@@ -50,4 +84,4 @@ Weather:
  - sensor.dark_sky_wind_speed
 
 
-
+ 

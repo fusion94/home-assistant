@@ -18,7 +18,9 @@ homeassistant:
 
 # Enables the frontend
 frontend:
-
+  themes:
+    green:
+      primary-color: "#6CA518"
 # Enables configuration UI
 config:
 
@@ -71,19 +73,48 @@ panel_iframe:
     icon: mdi:wrench
     url: http://10.0.0.13:3218
 
+mqtt:
+  broker: m13.cloudmqtt.com
+  port: 18143
+  client_id: home-assistant
+  keepalive: 60
+  username: !secret cloudmqtt_username
+  password: !secret cloudmqtt_password
 
 switch:
   - platform: mqtt
-    name: "Bedroom Switch"
-    state_topic: "home/bedroom/switch1"
-    command_topic: "home/bedroom/switch1/set"
+    name: "s20-1"
+    state_topic: "stat/sonoff/POWER"
+    command_topic: "cmnd/sonoff/POWER"
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+    qos: 0
+    retain: true
+  - platform: mqtt
+    name: "s20-2"
+    state_topic: "stat/sonoff/POWER"
+    command_topic: "cmnd/sonoff/POWER"
     payload_on: "ON"
     payload_off: "OFF"
     optimistic: false
     qos: 0
     retain: true
 
+device_tracker:
+  - platform: owntracks
+    max_gps_accuracy: 100
+    waypoints: true
 
+remote:
+  - platform: harmony
+    name: Living Room 
+    activity: Watch TV
+
+#device_tracker:
+#  - platform: snmp
+#    host: 10.0.0.3
+#    baseoid: 1.3.6.1.2.1.1.1.0
 
 
 

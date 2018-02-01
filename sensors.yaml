@@ -1,4 +1,21 @@
 ### SENSORS ###
+- platform: mqtt
+  state_topic: "owntracks/pixelxl/pixelxl"
+  name: "PixelXL Battery"
+  unit_of_measurement: "%"
+  value_template: "{{ value_json.batt }}"
+
+- platform: mqtt
+  state_topic: "owntracks/pixelxl/pixelxl"
+  name: "Latitude"
+  value_template: "{{ value_json.lat }}"
+
+- platform: mqtt
+  state_topic: "owntracks/pixelxl/pixelxl"
+  name: "Longitude"
+  value_template: "{{ value_json.lon }}"
+
+- platform: google_wifi
 
 - platform: steam_online
   api_key: !secret steam_client_id
@@ -40,7 +57,6 @@
 
 - platform: wemo
   static:
-    - 10.0.0.131
     - 10.0.0.176
 
 - platform: apple_tv 
@@ -59,6 +75,17 @@
     - type: last_boot
 
 - platform: cpuspeed
+
+- platform: coinmarketcap
+  currency:
+   - litecoin
+   - bitcoin
+            #          - ethereum  
+
+  #- platform: bitcoin
+  # display_options:
+  #- exchangerate
+  #- trade_volume_btc
 
 
 - platform: darksky
