@@ -1,0 +1,1 @@
+Feb 28 15:35:00 deadpool fail2ban.transmitter[18129]: WARNING Command ['status', 'apache'] has failed. Received UnknownJailException('apache',)

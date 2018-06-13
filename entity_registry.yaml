@@ -1,24 +1,48 @@
 climate.hallway_nest:
+  name:
   platform: nest
   unique_id: Xe3WizpCQZM4Wim6seO7yzG_MvHG4Or_
 light.lower_right:
+  name:
   platform: hue
   unique_id: 00:12:4b:00:04:06:1a:99-0b
 light.top_left:
+  name:
   platform: hue
   unique_id: 00:17:88:01:00:d1:08:45-0b
 light.top_right:
+  name:
   platform: hue
   unique_id: 00:12:4b:00:03:d0:fd:f9-0b
 light.lower_left:
+  name:
   platform: hue
   unique_id: 00:17:88:01:00:d4:b5:d3-0b
 media_player.apple_tv_4k:
+  name:
   platform: apple_tv
   unique_id: 5ac9ab2538a6971cf8b0a455b59f983b9d8455b8827ad57347d253d3174ea80f
 remote.apple_tv_4k:
+  name:
   platform: apple_tv
   unique_id: 5ac9ab2538a6971cf8b0a455b59f983b9d8455b8827ad57347d253d3174ea80f
 media_player.shield:
+  name:
   platform: cast
   unique_id: fd241512-866b-557a-4f58-d1765064b34c
+media_player.apple_tv_4k_2:
+  name:
+  platform: apple_tv
+  unique_id: 817d61dd9733d5c8f7e9986fbdedbe5e6a9b2faef39624883f97498b0ad0d688
+remote.apple_tv_4k_2:
+  name:
+  platform: apple_tv
+  unique_id: 817d61dd9733d5c8f7e9986fbdedbe5e6a9b2faef39624883f97498b0ad0d688
+light.hue_white_lamp_1:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:03:0a:7a:b8-0b
+light.outside_garage_left:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:03:07:59:9a-0b

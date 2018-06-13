@@ -15,11 +15,10 @@
   name: "Longitude"
   value_template: "{{ value_json.lon }}"
 
-- platform: google_wifi
-
 - platform: steam_online
   api_key: !secret steam_client_id
-  accounts: 76561198024913711
+  accounts: 
+    - 76561198024913711
 
 - platform: speedtest
   minute:
@@ -98,12 +97,4 @@
    - humidity
    - visibility
    - nearest_storm_distance
-
-
-
-
-
-
-
-
 
