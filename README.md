@@ -1,4 +1,6 @@
-# Home Assistant Configuration
+# This repository has been archived to preserve state. New repo coming soon.
+
+## Home Assistant Configuration
 
 My [Home Assistant](http://home-assistant.io) configuration files.
 
